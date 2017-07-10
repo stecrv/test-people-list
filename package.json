@@ -7,7 +7,7 @@
     "start": "neutrino start",
     "build": "neutrino build"
   },
-  "author": "Stefano",
+  "author": "Stefano Caravana",
   "license": "UNLICENSED",
   "devDependencies": {
     "css-loader": "^0.26.2",
