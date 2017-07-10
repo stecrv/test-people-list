@@ -1,0 +1,67 @@
+@import "node_modules/normalize-scss/sass/_normalize";
+@include normalize();
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background: #EEE;
+}
+h1{
+  font-size: 2em;
+  margin: 0 0 0.67em 0;
+  color: white;
+  background: black;
+  text-align: center;
+  line-height: 2.5em;
+}
+
+#peopleList{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start
+}
+.person{
+  width: 400px;
+  margin: 0 auto 20px auto;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0px 5px 0px 1px rgba(0, 0, 0, 0.02);
+  .name{
+    font-weight: bold;
+  }
+  .joined{
+    color: #a9a9a9;
+  }
+  img{
+    border-radius: 50%;
+  }
+}
+
+#peopleButton{
+  text-align: center;
+  button{
+    background-color: #2f3d80;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border:0;
+  }
+}
+@media all and (max-width: 800px) {
+  #peopleList{
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  #peopleList{
+    flex-direction: column;
+  }
+}
